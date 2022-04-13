@@ -10,6 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>测试git reset</p>
+        <p>测试git commit --amend</p>
       </header>
     </div>
   );
