@@ -1,0 +1,21 @@
+{
+  "name": "gzy-components-react",
+  "version": "1.0.0",
+  "description": "公共好用的react组件",
+  "main": "./lib/bundle.js",
+  "repository": "git@github.com:18227831325/gzy-components-react.git",
+  "author": "guziyi",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run rollup -c -w",
+    "build": "yarn run rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "rollup": "^2.53.2",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
