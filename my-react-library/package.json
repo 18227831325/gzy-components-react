@@ -1,6 +1,6 @@
 {
   "name": "gzy-components-react",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "公共好用的react组件",
   "main": "./lib/bundle.js",
   "repository": "git@github.com:18227831325/gzy-components-react.git",
