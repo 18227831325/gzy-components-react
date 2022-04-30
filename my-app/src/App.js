@@ -1,16 +1,12 @@
 import logo from './logo.svg';
+import { Demo } from 'gzy-components-react'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>测试git reset</p>
-        <p>测试git commit --amend</p>
+        <Demo></Demo>
       </header>
     </div>
   );

@@ -27,6 +27,9 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
+  Object.defineProperty(Constructor, "prototype", {
+    writable: false
+  });
   return Constructor;
 }
 
@@ -41,6 +44,9 @@ function _inherits(subClass, superClass) {
       writable: true,
       configurable: true
     }
+  });
+  Object.defineProperty(subClass, "prototype", {
+    writable: false
   });
   if (superClass) _setPrototypeOf(subClass, superClass);
 }
@@ -85,6 +91,8 @@ function _assertThisInitialized(self) {
 function _possibleConstructorReturn(self, call) {
   if (call && (typeof call === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized(self);
@@ -109,7 +117,7 @@ function _createSuper(Derived) {
   };
 }
 
-var Demo = /*#__PURE__*/function (_PureComponent) {
+var Demo$1 = /*#__PURE__*/function (_PureComponent) {
   _inherits(Demo, _PureComponent);
 
   var _super = _createSuper(Demo);
@@ -127,7 +135,7 @@ var Demo = /*#__PURE__*/function (_PureComponent) {
   _createClass(Demo, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React__default['default'].createElement("div", null, "\u8FD9\u662F\u7EC4\u4EF6\u4E00");
+      return /*#__PURE__*/React__default["default"].createElement("div", null, "\u8FD9\u662F\u7EC4\u4EF6\u4E00");
     }
   }]);
 
@@ -152,12 +160,38 @@ var DemoTwo = /*#__PURE__*/function (_PureComponent) {
   _createClass(DemoTwo, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React__default['default'].createElement("div", null, "\u8FD9\u662F\u7EC4\u4E8C");
+      return /*#__PURE__*/React__default["default"].createElement("div", null, "\u8FD9\u662F\u7EC4\u4EF62");
     }
   }]);
 
   return DemoTwo;
 }(React.PureComponent);
 
-exports.Demo = Demo;
+var Demo = /*#__PURE__*/function (_PureComponent) {
+  _inherits(Demo, _PureComponent);
+
+  var _super = _createSuper(Demo);
+
+  function Demo(props) {
+    var _this;
+
+    _classCallCheck(this, Demo);
+
+    _this = _super.call(this, props);
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Demo, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React__default["default"].createElement("div", null, "\u6D4B\u8BD5\u7EC4\u4EF604:27  16:00");
+    }
+  }]);
+
+  return Demo;
+}(React.PureComponent);
+
+exports.Demo = Demo$1;
+exports.DemoThree = Demo;
 exports.DemoTwo = DemoTwo;

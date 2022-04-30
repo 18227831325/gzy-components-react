@@ -1,7 +1,7 @@
 
 import React, { PureComponent} from 'react';
 
-class DemoTwo extends  PureComponent{
+class Demo extends  PureComponent{
   constructor(props){
     super(props)
     this.state = {
@@ -9,8 +9,8 @@ class DemoTwo extends  PureComponent{
     }
   }
   render(){
-    return <div>这是组件2</div>
+    return <div>测试组件16:32</div>
   }
 }
 
-export default DemoTwo
+export default Demo
