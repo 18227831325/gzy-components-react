@@ -9,7 +9,7 @@ class Demo extends  PureComponent{
     }
   }
   render(){
-    return <div>测试组件04:27  16:00</div>
+    return <div>这是组件三并且新增的测试下 {new Date().getTime()} </div>
   }
 }
 
